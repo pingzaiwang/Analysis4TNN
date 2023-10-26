@@ -21,14 +21,15 @@ with weight tensor dimensions of 28×28×28 for $\underline{\textbf{{W}}}^{(1)}$
 and $\underline{{\textbf{W}}}^{(3)}$, and 784 for the FC weight $\textbf{{w}}$. 
 Each MNIST image of size 28×28 is treated as a t-vector of 28×1×28, serving as an input example for the t-NN. 
 
-While training a t-NN with low-tubal-rank parameterization, we the following two points to emphasize. 
+While training a t-NN with low-tubal-rank parameterization, we have the following two points to emphasize. 
 <ul>
 <li> <strong>The low-tubal-rank constraint.</strong>
-  
-To impose the low-tubal-rank constraint to a weight tensor $\underline{\textbf{{W}}}\in\mathbb{R}^{28\times 28 \times 28}$, 
-we directly use the "factorization trick", that is we directly use $\underline{\textbf{{A}}}*_M\underline{\textbf{{B}}}$ to replace with $\underline{\textbf{{W}}}$ in the training process with two tensors
+  To impose the low-tubal-rank constraint to a weight tensor $\underline{\textbf{{W}}}\in\mathbb{R}^{28\times 28 \times 28}$, 
+we adopt the "factorization trick", that is we directly use $\underline{\textbf{{A}}}*_M\underline{\textbf{{B}}}$ instead of  $\underline{\textbf{{W}}}$ in the training process, with two tensors
 $\underline{\textbf{{A}}}\in\mathbb{R}^{28\times r \times 28}$ 
-and $\underline{\textbf{{B}}}\in\mathbb{R}^{r\times 28 \times 28}$. Thus, we train 
+and $\underline{\textbf{{B}}}\in\mathbb{R}^{r\times 28 \times 28}$. 
+
+Thus, we train 
 the proxy t-NN 
 $$\textbf{w}^{\top} \sigma \bigg( \underline{\textbf{A}}^{(3)} *_M \underline{\textbf{B}}^{(3)} *_M
 \sigma \big(\underline{{\textbf{A}}}^{(2)} *_M 
@@ -43,10 +44,9 @@ $$\textbf{w}^{\top}\sigma\bigg(\underline{{\textbf{W}}}^{(3)} *_M
 \big)\bigg).$$
 </li>
 <li> <strong>The upper bounds on F-norm of the weight tensors.</strong> 
-  
-  In our implementation, we add a regularization $R(\underline{\textbf{W}})$ 
-  defined as $R(\underline{\textbf{W}}) = 0~\mbox{if}~ \|\underline{\textbf{W}}\|^2_\mbox{F} < B$, and 
-$R(\underline{\textbf{W}}) = \lambda (\|\underline{\textbf{W}}\|^2_\mbox{F} - B)^2.$ while training.
+  In our implementation, we add a regularization term $R(\underline{\textbf{W}})$ defined as 
+$R(\underline{\textbf{W}}) = 0~\text{if}~ \|\underline{\textbf{W}}\|_F < B$, and 
+$R(\underline{\textbf{W}}) = \lambda (\|\underline{\textbf{W}}\|_F - B)^2$, other wise. 
 </li>
 </ul>
 
