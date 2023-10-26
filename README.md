@@ -1,7 +1,7 @@
 # Analysis4TNN
 This is the demo code for the paper titled 'Transformed Low-Rank Parameterization Can Help Robust Generalization for Tensor Neural Networks' presented at NeurIPS'23.
 
-If you have any questions or need assistance, please feel free to reach out to the first author, Andong Wang, at andong.wang@riken.jp. 
+If you have any questions or need assistance, please feel free to reach out to the first author, Andong Wang, at w.a.d@outlook.com. 
 You are welcome to modify the code to suit your needs, and we kindly request that you consider citing our paper if you find it useful.
 ```
 @inproceedings{
