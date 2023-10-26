@@ -7,7 +7,7 @@ You are welcome to modify the code to suit your needs, and we kindly request tha
 @inproceedings{
 WLBJZZ2023AdvTNNs,
 title={Transformed Low-Rank Parameterization Can Help Robust Generalization for Tensor Neural Networks},
-author={A. Wang, C. Li, M. Bai, Z. Jin, G. Zhou, and Q. Zhao},
+author={Andong Wang, Chao Li, Mingyuan Bai, Zhong Jin, Guoxu Zhou, and Qibin Zhao},
 booktitle={Thirty-seventh Conference on Neural Information Processing Systems (NeurIPS)},
 year={2023},
 url={https://openreview.net/forum?id=rih3hsSWx8}
