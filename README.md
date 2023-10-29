@@ -103,6 +103,6 @@ You can run the demo code for Section A.3 "Additional Regularization for a Bette
 ```
 python demo4ExpA3_ExplicitRegularization.py
 ```
-## Acknolwdgements
+## Acknowlegements
 We extend our deepest gratitude to Linfeng Sui and Xuyang Zhao for their indispensable support
 in implementing the Python code for t-NNs during the rebuttal phase.
