@@ -1,5 +1,5 @@
 # Analysis4TNN
-This is the demo code for the paper titled 'Transformed Low-Rank Parameterization Can Help Robust Generalization for Tensor Neural Networks' presented at NeurIPS'23. We extend our deepest gratitude to Linfeng Sui and Xuyang Zhao for their indispensable support in implementing the Python code for t-NNs during the rebuttal phase.
+This is the demo code for the paper titled 'Transformed Low-Rank Parameterization Can Help Robust Generalization for Tensor Neural Networks' presented at NeurIPS'23. 
 
 If you have any questions or need assistance, please feel free to reach out to the first author, Andong Wang, at w.a.d@outlook.com. 
 You are welcome to modify the code to suit your needs, and we kindly request that you consider citing our paper if you find it useful.
@@ -13,6 +13,9 @@ year={2023},
 url={https://openreview.net/forum?id=rih3hsSWx8}
 }
 ```
+
+
+
 ## Experiment A.1 Effects of Exact Transformed Low-rank Weights on the Adversarial Generalization Gap
 To validate the adversarial generalization bound in Theorem 6, we have conducted experiments on the MNIST dataset to explore the relationship between 
 adversarial generalization gaps (AGP), weight tensor low-rankness, and training sample size. 
@@ -100,4 +103,6 @@ You can run the demo code for Section A.3 "Additional Regularization for a Bette
 ```
 python demo4ExpA3_ExplicitRegularization.py
 ```
-
+## Acknolwdgements
+We extend our deepest gratitude to Linfeng Sui and Xuyang Zhao for their indispensable support
+in implementing the Python code for t-NNs during the rebuttal phase.
