@@ -67,7 +67,7 @@ training with GF demonstrate approximately transformed low-rank parameters, give
 **Statement A.2.2** As stated in Lemma 22 (in the supplementary material), the empirical adversarial risk tends to decrease to zero, 
 and the F-norm of the weights tends to grow to infinity as $t$ approaches infinity.
 
-In continuation of Experiment 1, we also focus to binary classification tasks involving digits 3 and 7, 
+In continuation of Experiment A.1, we also focus to binary classification tasks involving digits 3 and 7, 
 utilizing FSGM adversarial attacks. The t-NN model is structured with three t-product layers and one fully connected layer, 
 with weight tensor dimensions set to $D\times 28 \times 28$ for $\underline{\textbf{W}}^{(1)}$, 
 $D \times D \times 28$ for $\underline{\textbf{W}}^{(2)}$ and 
