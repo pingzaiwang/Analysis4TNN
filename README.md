@@ -57,7 +57,7 @@ You can run the demo code for Section A.1 "Effects of Exact Transformed Low-rank
 ```
 # when the upper bound on the tubal-rank of each weight tensor is 4
 python demo4ExpA1_AGPvsRank_R4.py
-# when the upper bound on the tubal-rank of each weight tensor is 28, which is equivalent to the 
+# when the upper bound on the tubal-rank of each weight tensor is 28, which is equivalent to the full-rank setting
 python demo4ExpA1_AGPvsRank_R28.py
 ```
 
